@@ -1,0 +1,23 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+ScriptError: Name (u'/home/tom/ab/renpy/renpy/common/000atl.rpy', 1504313599, 0) is defined twice, at renpy/common/000atl.rpy:25 and base/renpy/common/000atl.rpyc:25.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/home/dave/Documents/chark/renpy-6.99.13-sdk/renpy/bootstrap.py", line 305, in bootstrap
+    renpy.main.main()
+  File "/home/dave/Documents/chark/renpy-6.99.13-sdk/renpy/main.py", line 365, in main
+    renpy.game.script.load_script()  # sets renpy.game.script.
+  File "/home/dave/Documents/chark/renpy-6.99.13-sdk/renpy/script.py", line 265, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "/home/dave/Documents/chark/renpy-6.99.13-sdk/renpy/script.py", line 756, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn)
+  File "/home/dave/Documents/chark/renpy-6.99.13-sdk/renpy/script.py", line 422, in finish_load
+    bad_node.filename, bad_node.linenumber))
+ScriptError: Name (u'/home/tom/ab/renpy/renpy/common/000atl.rpy', 1504313599, 0) is defined twice, at renpy/common/000atl.rpy:25 and base/renpy/common/000atl.rpyc:25.
+
+Linux-4.2.0-42-generic-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.13.2919
+ 
